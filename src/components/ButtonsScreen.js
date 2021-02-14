@@ -1,11 +1,7 @@
 import React from "react";
 
-export default function IconsScreen() {
-  const title = "Today I am";
-  const options = [
-    { id: "better", text: "better" },
-    { id: "worse", text: "worse" },
-  ];
+export default function ButtonsScreen({ screen }) {
+  const { title, options } = screen;
 
   const renderButtonPanel = () => {
     return (

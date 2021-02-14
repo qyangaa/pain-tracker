@@ -1,13 +1,7 @@
 import React from "react";
 
-export default function IconsScreen() {
-  const title = "Today I feel";
-  const options = [
-    { src: "/assets/Icons/peaceful.svg", id: "peaceful", text: "Peaceful" },
-    { src: "/assets/Icons/peaceful.svg", id: "peaceful", text: "Peaceful" },
-    { src: "/assets/Icons/peaceful.svg", id: "peaceful", text: "Peaceful" },
-    { src: "/assets/Icons/peaceful.svg", id: "peaceful", text: "Peaceful" },
-  ];
+export default function IconsScreen({ screen }) {
+  const { title, options } = screen;
 
   const renderIconGroup = (option) => {
     return (

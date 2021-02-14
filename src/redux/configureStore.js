@@ -1,9 +1,11 @@
 import { createStore, combineReducers } from "redux";
-import defaultReducer from "./defaultReducer";
+import trackerReducer from "./trackerReducer";
+import screenReducer from "./screenReducer";
 export default function configureStore() {
   const store = createStore(
     combineReducers({
-      defaultState: defaultReducer,
+      trackerState: trackerReducer,
+      screenState: screenReducer,
     }),
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   );
