@@ -5,7 +5,6 @@ import IconsScreen from "./IconsScreen";
 import ButtonsScreen from "./ButtonsScreen";
 
 export default function Container() {
-  const [image, setImage] = useState("/assets/Pictures/img-building.jpg");
   const screen = useSelector((state) => state.screenState.screens);
   const [curScreen, setCurScreen] = useState(0);
 

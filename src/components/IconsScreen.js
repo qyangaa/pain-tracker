@@ -1,12 +1,21 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { toggleOption } from "../redux/screenActionCreator";
 
 export default function IconsScreen({ screen }) {
   const { title, options } = screen;
+  const dispatch = useDispatch();
 
   const renderIconGroup = (option) => {
     return (
       <div className="icon-group" key={option.id}>
-        <img src={option.src} className="main-icon" />
+        <img
+          src={option.src}
+          className={option.selected ? "main-icon active" : "main-icon"}
+          onClick={() =>
+            dispatch(toggleOption({ type: screen.type, optionId: option.id }))
+          }
+        />
         <h3 className="icon-text">{option.text}</h3>
       </div>
     );
@@ -23,7 +32,7 @@ export default function IconsScreen({ screen }) {
     <div className="content">
       <h1 className="title">{title}</h1>
       {renderIconPanel()}
-      <input type="text" class="short-input" placeholder="More thoughts" />
+      <input type="text" className="short-input" placeholder="More" />
     </div>
   );
 }
