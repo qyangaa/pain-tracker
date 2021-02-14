@@ -19,12 +19,14 @@ h6 {
   background-attachment: fixed;
   width: 100vh;
   height: 100vh;
+
   position: fixed;
 }
 
 .filter {
   width: 100vw;
   height: 100vh;
+
   backdrop-filter: blur(1px);
   position: fixed;
   align-items: center;
@@ -49,19 +51,19 @@ h6 {
 }
 
 .content {
-  margin-top: 25vh;
+  margin-top: 20vh;
   width: 100%;
   padding: 0;
   text-align: center;
 }
 
 .content .title {
-  font-size: min(50px, 10vw);
+  font-size: min(50px, 6vw);
   font: normal normal normal 40px/46px Ubuntu;
 }
 
 .icon-panel {
-  max-width: 70vw;
+  max-width: 80vw;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
