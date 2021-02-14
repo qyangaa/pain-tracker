@@ -6,6 +6,7 @@ import ButtonsScreen from "./ButtonsScreen";
 export default function Container() {
   const [image, setImage] = useState("/assets/Pictures/img-building.jpg");
   const [curScreen, setCurScreen] = useState(0);
+
   return (
     <div style={{ backgroundImage: `url(${image})` }} className="container">
       <div className="filter">
