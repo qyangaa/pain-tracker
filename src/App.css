@@ -1,14 +1,117 @@
+* {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", monospace;
+  text-align: center;
+}
+
 .container {
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100vw;
+  width: 100vh;
   height: 100vh;
+  position: fixed;
 }
 
 .filter {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   backdrop-filter: blur(1px);
+  position: fixed;
+  align-items: center;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.fliplr {
+  transform: rotate(180deg);
+}
+
+.utilityIcon {
+  height: 30px;
+  margin: 5%;
+  fill: #fff;
+}
+
+.content {
+  margin-top: 25vh;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.content .title {
+  font-size: min(50px, 10vw);
+  font: normal normal normal 40px/46px Ubuntu;
+}
+
+.icon-panel {
+  max-width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-panel .icon-group {
+  text-align: center;
+  width: 40%;
+  margin-bottom: 10%;
+}
+
+.icon-group .main-icon {
+  width: 65px;
+}
+
+.icon-group .icon-text {
+  font-family: "Work Sans", sans-serif;
+  margin: 2px;
+}
+
+.button-panel {
+  max-width: 70vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button-panel button {
+  display: block;
+  font-family: "Patrick Hand", cursive;
+  font-size: min(50px, 9vw);
+  margin: 5vh;
+  width: 40vw;
+  height: 20vw;
+  background-color: rgba(255, 255, 255, 0.445);
+  color: #000;
+  border: none;
+  border-radius: 50px;
+}
+
+.short-input {
+  background-color: rgba(0, 0, 0, 0.445);
+  border: none;
+  border-radius: 20px;
+  height: min(50px, 3vh);
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
 }
